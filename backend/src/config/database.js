@@ -1,4 +1,4 @@
-const mongoose = require('mongoose')
-mongoose.Promise = global.Promise
+import { Promise, connect } from 'mongoose';
+Promise = global.Promise
 
-module.exports = mongoose.connect('mongodb://localhost/mymoney',{useNewUrlParser: true})
+export default connect('mongodb://localhost/mymoney',{useNewUrlParser: true})
