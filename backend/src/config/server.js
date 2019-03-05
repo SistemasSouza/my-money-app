@@ -9,3 +9,5 @@ server.use(json())
 server.listen(port, function(){
     console.log(`BACKEND is running on port ${port}`)
 })
+
+export default server

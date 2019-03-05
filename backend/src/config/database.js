@@ -1,4 +1,3 @@
-import { Promise, connect } from 'mongoose';
-Promise = global.Promise
+import { connect } from 'mongoose';
 
 export default connect('mongodb://localhost/mymoney',{useNewUrlParser: true})

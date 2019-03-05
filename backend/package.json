@@ -4,13 +4,15 @@
   "description": "",
   "main": "src/loader.js",
   "scripts": {
-    "start": "nodemon",
-    "production":"pm2 start src/loader.js --name my-money-backend"
+    "start": "nodemon --exec babel-node src/loader.js",
+    "production": "pm2 start src/loader.js --name my-money-backend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-query-int": "^3.0.0",
